@@ -1,5 +1,7 @@
 # MyTime
 
+![mytime](https://github.com/user-attachments/assets/dfe9db65-fc16-409e-82e9-239b3d5e6716)
+
 Ever get tired of constantly looking at your watch when coding? MyTime solves that issue by displaying your system clock directly in the browser. To see the live preview click [here](https://mytime-beta.vercel.app/)
 
 ## Local Deployment
