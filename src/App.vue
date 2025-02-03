@@ -1,5 +1,6 @@
 <template>
     <div class="main-div">
+        <ToggleComponent />
       <transition name="time" appear>
         <TimeDisplay />
       </transition>
@@ -9,11 +10,12 @@
 <script>
 import TimeDisplay from './components/TimeDisplay.vue'
 import DevComponent from './components/DevComponent.vue'
+import ToggleComponent from './components/ToggleThemeComponent.vue'
 
 export default {
     name: 'App',
     components: {
-        TimeDisplay, DevComponent
+        TimeDisplay, DevComponent, ToggleComponent
     }
 
 }
@@ -38,18 +40,24 @@ export default {
     color: #2c3e50;
     width: 100vw;
     height: 100vh;
-    background: #000;
 }
-
 .main-div {
     width: 100%;
     height: 100%;
-    background: #000;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
+}
+
+/* toggle styles for the background color */
+.light {
+    background: #FFFFFF;
+    color: red;
+}
+.dark {
+    background: #000000;
 }
 
 /* enter styles for the time display box */

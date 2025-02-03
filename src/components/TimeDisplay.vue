@@ -3,11 +3,14 @@
         <p>{{ current_time }}</p>
         <p>{{ current_date }}</p>
     </div>
+    
 </template>
 <script>
 export default {
     name: 'TimeDisplay',
     data() {
+
+
         return {
             current_time: "Syncing...",
             current_date: new Date().toLocaleDateString()
@@ -19,6 +22,7 @@ export default {
             this.displayCurrentTime()
         }, 1000)
     },
+
     methods: {
         displayCurrentTime: function() {
             // 24 hr format options
